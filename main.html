@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>For You — Anniversary</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>For You ❤️</h2>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-target="welcome">Welcome</button>
+          <button class="tab" data-target="music">Music</button>
+          <button class="tab" data-target="gallery">Gallery</button>
+        </div>
+      </div>
+
+      <section id="welcome" class="section active">
+            <h3>Welcome</h3>
+            <p class="intro-message">
+                Happy Anniversary baby! I thought I'd make this just for you. I know it's not much, but I thought I'd make you something the way I know how. I hope you like it because it took me quite a while xxxxxx
+            </p>
+            <p class="intro-message">
+                Click the tabs above to explore — there's music and photos to remind you of us 😘😘😘
+            </p>
+
+            <p id="love-counter" class="love-counter"></p>
+            <div class="whoawesome">
+                <img src="images/whoawesome.jpg">
+            </div>
+            <div class="floating-heart" style="left: 20%;">❤️</div>
+            <div class="floating-heart" style="left: 50%; animation-delay: 1s;">❤️</div>
+            <div class="floating-heart" style="left: 80%; animation-delay: 2s;">❤️</div>
+
+
+        </section>
+
+
+      <section id="music" class="section">
+        <h3>Music</h3>
+        <p>Just some songs that make me think of you 😊</p>
+        <section id="music" class="section">
+            <ul id="song-list" class="song-list">
+                <li data-src="songs/You & Me Song - The Wannadies.mp3">Song 1</li>
+                <li data-src="songs/Nothing's Gonna Hurt You Baby - Cigarettes After Sex.mp3">Song 2</li>
+                <li data-src="songs/Dance with Me Tonight - Olly Murs.mp3">Song 3</li>
+                <li data-src="songs/golden hour - JVKE.mp3">Song 4</li>
+                <li data-src="songs/Sweet - Cigarettes After Sex.mp3">Song 5</li>
+                <li data-src="songs/Always Forever - Cults.mp3">Song 6</li>
+                <li data-src="songs/For The Hell Of It - Sawyer Hill.mp3">Song 7</li>
+            </ul>
+        </section>
+
+        </section>
+
+        <section id="gallery" class="section">
+            <h3>Gallery</h3>
+            <p>Photos of us 📸 Click on them to make it fullscreen.</p>
+            <div class="gallery" id="gallery-grid">
+              <!-- Thumbnails inserted by JS -->
+            </div>
+            <!-- Lightbox modal -->
+            <div id="lightbox" class="modal hidden">
+                <div class="lightbox-content modal-content">
+                    <button id="lb-prev" class="lb-side" aria-label="Previous">◀</button>
+                    <img id="lb-image" src="" alt="" />
+                    <button id="lb-next" class="lb-side" aria-label="Next">▶</button>
+                    <div class="lb-bottom">
+                        <button id="lb-close" class="lb-close">x</button>
+                    </div>
+                </div>
+            </div>
+      </section>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
